@@ -25,6 +25,8 @@ item.select_by_visible_text('value')
 Work in silence mode, do not open web browser
 
 ```
+from selenium.webdriver.chrome.options import Options
+
 option = Options()
 options.headless = True  # hide GUI
 options.add_argument("--window-size=1920,1080")  # set window size to native GUI size
