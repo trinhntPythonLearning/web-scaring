@@ -37,5 +37,5 @@ class ScriptCrawlerSpider(CrawlSpider):
         yield {
             'name': article_item.xpath('./h1/text()').get(),
             'plot': article_item.xpath('./p/text()').get(),
-            'user-agent': response.request.headers['User-Agent']
+            # 'user-agent': response.request.headers['User-Agent']
         }

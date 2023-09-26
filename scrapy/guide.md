@@ -44,4 +44,11 @@ scrapy genspider -t crawl <spider_name> <url>
 ```
 
 
+### Pipeline
+Pipeline file: pipelines.py  
+There are 3 related functions:
+- open_spider: called when spider opened
+- close_spider: call when spider closed
+- process_item: call when each item is process
 
+Config edit: **ITEM_PIPELINES** in **"setting.py"** file
