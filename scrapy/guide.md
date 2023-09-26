@@ -25,6 +25,23 @@ scrapy crawl <spider_name>
 scrapy crawl <spider_name> -o <file>.json(.csv) -> save output to file
 ```
 
+### Scrapy template
+List all template that spider can generate
+```
+scrapy genspider -l:
+
+-> Output:
+Available templates:
+  basic
+  crawl
+  csvfeed
+  xmlfeed
+```
+
+Create crawl template
+```
+scrapy genspider -t crawl <spider_name> <url>
+```
 
 
 
